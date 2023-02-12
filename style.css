@@ -13,5 +13,41 @@
 }
 
 body{
-    font-family: 'Spartan', sans-serif;
+    font-family: 'Spartan', sans-serif; 
+}
+
+.main{
+    display: grid;
+    max-width: 1400px;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, max-content);
+    grid-template-areas: "main" "cta" "image1" "about" "image2";
+}
+.container{
+    width: 90%;
+    /* background: var(--black); */
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+.main_hero{
+    grid-area: main;
+    background-image: url("src/desktop-image-hero-1.jpg");
+    min-height: 550px;
+    background-size: cover;
+    background-position: center;
+}
+
+.main_nav{
+    display: flex;    
+}
+
+.main_links{
+    display: none;
+}
+
+.main_logo{
+    margin: 0 auto;
 }

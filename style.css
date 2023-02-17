@@ -109,3 +109,16 @@ body{
     background-size: cover;
     background-position: center;
 }
+
+.main_about{
+    grid-area: about;   
+}
+
+.main_paragraph--about{
+    margin: 1em 0 0 0;
+}
+
+.main_bg--second{
+    grid-area: image2;
+    background-image: url(src/image-about-light.jpg);
+}

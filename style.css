@@ -67,3 +67,27 @@ body{
 .main_control{
     height: 40%;
 }
+
+.main_buy{
+    grid-area: "cta";
+}
+
+.main_title{
+    color: var(--black);
+}
+.main_paragraph{
+    line-height: 1.5;
+    margin: 1em 0 2em;
+    color: var(--dark-gray);
+}
+
+.main_cta{
+    text-decoration: none;
+    color: var(--very-dark-gray);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.main_arrow{
+    margin-left: 20px;
+}

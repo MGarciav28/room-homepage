@@ -69,7 +69,7 @@ body{
 }
 
 .main_buy{
-    grid-area: "cta";
+    grid-area: cta;
 }
 
 .main_title{
@@ -121,4 +121,53 @@ body{
 .main_bg--second{
     grid-area: image2;
     background-image: url(src/image-about-light.jpg);
+}
+
+@media (min-width: 768px) {
+
+    .container{
+        width: 85%;
+        padding: 70px 0;
+    }
+
+    .main{
+        grid-template-columns: repeat(7,1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: 
+        "main main main main cta cta cta"
+        "main main main main cta cta cta"
+        "main main main main cta cta cta"        
+        "image1 image1 about about about image2 image2"
+        "image1 image1 about about about image2 image2";
+    }
+
+    .main_controls{
+        grid-area: cta;
+        justify-self: start;
+    }
+
+    .main_logo{
+        margin: 0%;
+    }
+
+    .main_hamburger{
+        display: none;
+    }
+
+    .main_links{
+        padding: 0;
+        display: grid;
+        grid-auto-flow: column;
+        gap: 1em;
+        margin-left: 10%;
+    }
+
+    .main_list{
+        list-style: none;
+    }
+
+    .main_link{
+        color: var(--white);
+        text-decoration: none;
+    }
 }

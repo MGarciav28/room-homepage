@@ -11,9 +11,11 @@
     <main class="main">
         <section class="main_hero">
             <nav class="main_nav container">
-                <img src="src/icon-hamburger.svg" class="main_hamburger" alt="">
-                <img src="src/logo.svg" class="main_logo" alt="">
-                <ul class="main_links">
+                <div class="icon_container">
+                    <img src="src/icon-hamburger.svg" class="main_hamburger" id="hamburger" alt="">
+                    <img src="src/logo.svg" class="main_logo" alt="">
+                </div>
+                <ul class="main_links main_links_show" id="main_menu">
                     <li class="main_list"><a href="" class="main_link">Home</a></li>
                     <li class="main_list"><a href="" class="main_link">Shop</a></li>
                     <li class="main_list"><a href="" class="main_link">About</a></li>
@@ -42,6 +44,7 @@
             </div>
         </section>
         <div class="main_bg main_bg--second"></div>
+        <script src="scripts.js"></script>
     </main>
 </body>
 </html>
